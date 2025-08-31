@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.hangman {
+    stroke: #333;
+    stroke-width: 4;
+    fill: transparent;
+}
+
+.body-part {
+    display: none; /* Inicia com as partes do corpo invisíveis */
+}
+
+.word-display {
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    margin: 20px 0;
+    color: #444;
+}
+
+.word-display span {
+    border-bottom: 2px solid #ccc;
+    margin: 0 5px;
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+}
+
+.keyboard {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.keyboard button {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.keyboard button:hover:not(:disabled) {
+    background-color: #ddd;
+}
+
+.keyboard button:disabled {
+    cursor: not-allowed;
+    background-color: #ccc;
+    color: #888;
+}
+
+.message {
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.win {
+    color: green;
+}
+
+.lose {
+    color: red;
+}
+
+#restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#restart-button:hover {
+    background-color: #0056b3;
+}
